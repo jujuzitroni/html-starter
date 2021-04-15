@@ -42,7 +42,11 @@ a:hover {
 }
 
 .charset {
+  padding: 2em;
   background-color: #24282f;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-gap: 2em;
 }
 
 .character {
@@ -52,7 +56,15 @@ a:hover {
   border-radius: 1em;
   background-color: #3c3e44;
   color: white;
-  margin: 10%;
+}
+
+.charinfo {
+  display: grid;
+  padding: 0.75em;
+}
+
+.charinfo * {
+  margin: 0;
 }
 
 .character img {
@@ -65,18 +77,3 @@ a:hover {
 .character h3 {
   color: #9d9d9d;
 }
-
-.charinfo {
-  display: grid;
-  padding: 0.75em;
-}
-
-.charinfo * {
-  margin: 0;
-}
-
-/* .charinfo {
-  margin-left: 1em;
-  display: flex;
-  flex-direction: column;
-} */
