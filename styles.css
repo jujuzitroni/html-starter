@@ -51,27 +51,21 @@ a:hover {
 
 .character {
   display: grid;
-  grid-auto-flow: column;
   grid-template-columns: auto 1fr;
   border-radius: 1em;
   background-color: #3c3e44;
   color: white;
+  column-gap: 1em;
 }
 
-.charinfo {
-  display: grid;
-  padding: 0.75em;
-}
-
-.charinfo * {
+.character * {
   margin: 0;
 }
 
 .character img {
   border-bottom-left-radius: 1em;
   border-top-left-radius: 1em;
-  height: 14em;
-  width: 13em;
+  grid-row: 1/4;
 }
 
 .character h3 {
